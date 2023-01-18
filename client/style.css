@@ -1,0 +1,276 @@
+:root {
+    --C0: rgb(167, 169, 172);
+    --C1: rgb(0, 125, 190);
+    --C2: rgb(0, 88, 138);
+    --C3: rgb(0, 171, 189);
+    --C4: rgb(84, 198, 211);
+    --C5: rgb(0, 183, 199);
+    --C6: rgb(35, 31, 32);
+    --C7: rgb(99, 100, 102);
+
+    --bg-color: hsl(49 37% 94%);
+    --typewriterSpeed: 8s;
+    --typewriterCharacters: 62;
+  }
+
+
+input, textarea{
+border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+}
+body{
+
+  height: 100%;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: var(--C3);
+  margin-left: 10%;
+  margin-right: 10%;
+  /* margin-top: 0px; */
+  /* border: 1px solid var(--C3);
+  box-shadow: 0px 0px 5px 5px var(--C4); */
+}
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  
+
+}
+.flex-column{
+  flex-direction: column;
+ 
+}
+#body-item{
+  background-color: var(--C0);
+}
+
+/*main and section*/
+.main {
+  width: 60%;
+  height: 100vh;
+  margin: 10px;
+
+ 
+}
+
+.section {
+  width: 20%;
+  padding: 30px;
+  height: 100vh;
+  border: green solid 5px;
+  margin: 50px;
+ 
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #header-intro{
+    
+    justify-content: center;
+  }
+#header-intro .a{
+margin: 10px;
+justify-content: center;
+
+}
+  .title{
+    display: inline;
+    width: 30vw;
+  }
+
+ .btn{
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-weight: bold;
+ }
+
+.btn-primary{
+    color: white;
+    background-color:   var(--C1);
+    border: 1px solid var(--C7);
+    box-shadow: 0px 0px 5px 5px var(--C4);
+}
+.btn-primary:hover{
+ 
+    color: black;
+    background-color: var(--C7);
+    border: 1px solid var(--C1);
+    box-shadow: 0px 0px 5px 5px var(--C4);
+}
+
+.nav-link {
+  color: var(--C1) ;
+}
+.nav-list {
+  list-style-type: none;
+  margin: auto;
+  padding: auto;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  background-color: #111111;
+  color: var(--C5);
+}
+
+a:hover {
+  background-color: #111111;
+  color: var(--C5);
+}
+
+
+/*Footer*/
+#footer li{
+  list-style-type: none;
+  text-decoration: none;
+  margin: 10px;
+
+}
+ 
+/*horizontal line*/
+hr{
+  width: 80%;
+  align-items: center;
+}
+/*Call For Papers*/
+
+ td:nth-child(even){
+  border: 1px solid var(--C3);
+}
+td{
+  margin: 5px;
+}
+table{
+  width: 100%;
+}
+
+/*Conact page*/
+
+.input{
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.input label{
+  font-size: 16pt;
+  width: 35%;
+}
+.input input,textarea{
+  width: 60%;
+}
+#contact-form{
+  background-color: var(--C0);
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px black;
+  margin:10px;
+}
+
+.submit-contact{
+  margin: 15px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Modal CSS */
+
+/* The Modal (background) */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #0d0058;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

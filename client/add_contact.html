@@ -1,0 +1,21 @@
+<?php
+require("connect.php");
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$number = $_POST['number'];
+$comment = $_POST['comment'];
+
+try {
+
+    $sql = "INSERT INTO contact (c_name, c_email, c_number, c_comment)
+    VALUES ('$name', '$email', $number, '$comment')";
+    // use exec() because no results are returned
+    $conn->exec($sql);
+header("Location: contact.php?add=success");
+
+  } catch(PDOException $e) {
+    echo $sql . "<br>" . $e->getMessage();
+  }
+
+?>

@@ -157,15 +157,35 @@ hr{
 }
 /*Call For Papers*/
 
- td:nth-child(even){
-  border: 1px solid var(--C3);
-}
-td{
-  margin: 5px;
-}
-table{
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
   width: 100%;
+  border: 2px solid black;
+ 
 }
+
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(even){
+  background-color: var(--C4);
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--C6);
+  color: var(--C5);
+}
+
 
 /*Conact page*/
 

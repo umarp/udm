@@ -51,18 +51,15 @@ body{
 /*main and section*/
 .main {
   width: 60%;
-  height: 100vh;
   margin: 10px;
-
- 
 }
 
 .section {
+
   width: 20%;
   padding: 30px;
-  height: 100vh;
   border: green solid 5px;
-  margin: 50px;
+  margin: 20px;
  
 }
 
@@ -87,26 +84,45 @@ justify-content: center;
     width: 30vw;
   }
 
- .btn{
-  padding: 10px;
-  border: 1px solid;
-  border-radius: 5px;
-  font-weight: bold;
- }
-
-.btn-primary{
-    color: white;
-    background-color:   var(--C1);
-    border: 1px solid var(--C7);
-    box-shadow: 0px 0px 5px 5px var(--C4);
-}
-.btn-primary:hover{
- 
+  .btn {
     color: black;
-    background-color: var(--C7);
-    border: 1px solid var(--C1);
-    box-shadow: 0px 0px 5px 5px var(--C4);
-}
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    margin: 0 0 2em;
+    min-width: 100px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border-radius: 10px;
+  }
+ 
+  .btn:hover {
+    text-decoration: none;
+  }
+
+  .btn-animation {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgb(255, 255, 255);
+    outline: 2px solid;
+    outline-color: rgb(0, 88, 138);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .btn-animation:hover {
+    color: white;
+    background-color: black;
+    border: 0px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(1,1,1,0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px  var(--C5);
+  }
+  
 
 .nav-link {
   color: var(--C1) ;
@@ -127,8 +143,8 @@ justify-content: center;
   display: block;
   color: white;
   text-align: center;
-  padding: 16px;
-  text-decoration: none;
+  padding: 8px;
+  text-decoration: underline;
 }
 
 .nav-item a:hover {
@@ -158,9 +174,9 @@ hr{
 /*Call For Papers*/
 
 .table {
-  font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  height: auto;
   border: 2px solid black;
  
 }
@@ -211,21 +227,12 @@ hr{
   margin:10px;
 }
 
-.submit-contact{
-  margin: 15px;
-  text-align: center;
+
+@media (min-width: 600px) {
+  .btn {
+    margin: 0 1em 2em;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

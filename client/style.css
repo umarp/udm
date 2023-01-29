@@ -9,11 +9,22 @@
     --C7: rgb(99, 100, 102);
   }
 
+  @font-face {
+    font-family: Optima;
+    src: url(OPTIMA.woff);
+    }
+*{
+  font-family: 'Optima', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.04rem;
+}
 
 input, textarea{
 border: 1px solid black;
   border-radius: 5px;
   color: black;
+}
+address{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
 
@@ -154,7 +165,7 @@ justify-content: center;
 }
 
 a:hover {
-  background-color: #111111;
+
   color: var(--C5);
 }
 
@@ -231,7 +242,7 @@ hr{
   margin:15px;
   text-decoration: underline;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.5em;
 }
 /*Venue, Accommodation, Sightseeing,Travel */
 
